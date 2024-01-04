@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .link_class{
+        text-decoration: none;
+        display: flex;
+        gap:40px;
+        list-style:none;
+        background-color:gray;
+        height:100px;
+        align-items:center;
+        justify-content: center;
+        list-style:none;
+        
+    }
+</style>
+<body>
+    <div >
+
+        <ul class ="link_class" >
+            
+            <li>
+                
+                <a style= "text-decoration: none; " href = "{% url 'home' %}">Home</a>
+            </li>
+            <li>
+                
+                <a style= "text-decoration: none; " href="{% url 'register' %}">Register</a>
+            </li>
+        </ul>
+        
+    </div>
+    
+</body>
+</html>

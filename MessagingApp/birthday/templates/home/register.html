@@ -1,0 +1,65 @@
+{% include "home/navbar.html" %}
+    
+    <div class="container">
+        
+
+            <form action="{% url 'home' %}" method="POST">
+                {% csrf_token %}
+                <table style="width:30%;margin-left:auto;margin-right:auto">
+           <tr style="height: 70px;">
+           <td>
+               <label for="">Name</label>
+           </td> 
+            <td>
+                <input type="text" name= "name">
+
+            </td>
+            
+            
+           </tr> 
+          
+           
+          <tr style="height: 70px;">
+            <td>
+
+                <label for="email">Email</label>
+            </td>
+            <td>
+
+                <input type="email" name="email">
+            </td>
+          </tr >
+          <tr style= "height:70px;">
+
+            <td><label for="birthday">Birthday:</label></td>    
+              
+            <td><input type="date" id="birthday" name="birthday"></tr>
+            </tr> 
+            <tr style= "height:70px;">
+
+                <td><label for="birthday">Date of Joining:</label></td>    
+                  
+                <td><input type="date" id="birthday" name="date_of_joining"></tr>
+                </tr> 
+
+                <tr style="height: 70px;">
+<td>
+
+    <label for="phone">Phone No:</label><br><br>
+</td>
+
+<td>
+
+    <input type="tel" id="phone" name="phone"  pattern="[1-9]{1}[0-9]{9}" required><br><br>
+</td>
+                </tr>
+          <tr style= "height:70px;">
+
+              <td>
+
+                  <button class="submit">Submit </button>
+              </td>
+          </tr>
+        </table>
+        </form>
+    </div>
